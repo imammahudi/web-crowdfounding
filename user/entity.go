@@ -2,6 +2,7 @@ package user
 
 import "time"
 
+// Model User
 type User struct {
 	ID             int
 	Name           string

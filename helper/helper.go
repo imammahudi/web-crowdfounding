@@ -2,6 +2,7 @@ package helper
 
 import "github.com/go-playground/validator/v10"
 
+// Struct (Structur data) gambaran table dari database / bisa digunakan untuk hal lain 
 type Response struct {
 	Meta Meta        `json:"meta"`
 	Data interface{} `json:"data"`
@@ -13,6 +14,7 @@ type Meta struct {
 	Status  string `json:"status"`
 }
 
+// Function untuk Json Formatter
 func APIResponse(message string, code int, status string, data interface{}) Response {
 	meta := Meta{
 		Message: message,
