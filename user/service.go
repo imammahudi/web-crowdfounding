@@ -32,8 +32,6 @@ func (s *service) RegisterUser(input RegisterUserInput) (User, error) {
 	}
 	user.PasswordHash = string(PasswordHash)
 	user.Role = "user"
-	user.AvatarFileName = "user.jpeg"
-	user.Token = "asdoasbnfgosbajogbjoasd"
 
 	newUser , err := s.repository.Save(user)
 	if err != nil {

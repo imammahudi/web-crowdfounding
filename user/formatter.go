@@ -14,7 +14,7 @@ func FormateUser(user User, token string) UserFormatter {
 		Name:       user.Name,
 		Occupation: user.Occupation,
 		Email:      user.Email,
-		Token:      user.Token,
+		Token:      token,
 	}
 
 	return formatter
