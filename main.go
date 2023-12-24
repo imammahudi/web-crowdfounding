@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"web-crowdfounding/auth"
 	"web-crowdfounding/handler"
@@ -21,11 +22,8 @@ func main() {
 
 	userRepository := user.NewRepository(db)
 	userService := user.NewService(userRepository)
-
 	authService := auth.NewService()
 
-	// fmt.Println(authService.GenerateToken(1001))
-	
 	userHandler := handler.NewUserHandler(userService, authService)
 	
 	router := gin.Default()
