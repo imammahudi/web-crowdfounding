@@ -1,10 +1,12 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net/http"
 	"strings"
 	"web-crowdfounding/auth"
+	"web-crowdfounding/campaign"
 	"web-crowdfounding/handler"
 	"web-crowdfounding/helper"
 	"web-crowdfounding/user"
@@ -24,6 +26,13 @@ func main() {
 	}
 
 	userRepository := user.NewRepository(db)
+
+	campaignRepository := campaign.NewRepository(db)
+	campaigns, err := campaignRepository.FindAll()
+	fmt.Println("debug")
+
+	fmt.Println(len(campaigns))
+
 	userService := user.NewService(userRepository)
 	authService := auth.NewService()
 
