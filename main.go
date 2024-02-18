@@ -26,15 +26,15 @@ func main() {
 	}
 
 	userRepository := user.NewRepository(db)
-
 	campaignRepository := campaign.NewRepository(db)
-	campaigns, err := campaignRepository.FindAll()
-	fmt.Println("debug")
+	authService := auth.NewService()
 
+	campaignService := campaign.NewService(campaignRepository)
+	campaigns, _ := campaignService.FindCampaigns(2)
 	fmt.Println(len(campaigns))
 
 	userService := user.NewService(userRepository)
-	authService := auth.NewService()
+	
 
 	userHandler := handler.NewUserHandler(userService, authService)
 	
