@@ -17,98 +17,20 @@ web apps that users can use to invest in the products offered. This application 
   * Redux to manage application's state
   * Redux Thunk middleware to handle asynchronous redux actions
 
-## Quickstart Guide
+## Setup Go and workspace
 
-To run this project locally you can use docker compose provided in the repository. Here is a guide on how to run this project locally using docker compose.
+* Download the installer from the page https://golang.org/dl/ and install the package.
 
-Clone the repository
-```
-$ git clone https://github.com/mohamedsamara/mern-ecommerce.git
-```
+## Prototype
 
-Edit the dockercompose.yml file and update the the values for MONGO_URI and JWT_SECRET
-
-Then simply start the docker compose:
-```
-$ docker compose -f dockercompose.yml up
-```
-
-## Database Seed
-
-* The seed command will create an admin user in the database
-* The email and password are passed with the command as arguments
-* Like below command, replace brackets with email and password. 
-* For more information, see code [here](server/utils/seed.js)
-
-```
-npm run seed:db [email-***@****.com] [password-******] // This is just an example.
-```
-
-## Demo
-
-This application is deployed on Vercel Please check it out :smile: [here](https://mern-store-gold.vercel.app).
-
-See admin dashboard [demo](https://mernstore-bucket.s3.us-east-2.amazonaws.com/admin.mp4)
-
-## Install
-
-Some basic Git commands are:
-
-```
-$ git clone https://github.com/mohamedsamara/mern-ecommerce.git
-$ cd project
-$ npm install
-```
-
-## Start development
-
-```
-$ npm run dev
-```
-
-## Simple build for production
-
-```
-$ npm run build
-```
-
-## Run build for production
-
-```
-$ npm start
-```
-
+To see the prototype, you can see the figma link as follows :smile: [here](https://www.figma.com/file/9MMRtFn5ChE5BMKFE6ckH3/startup-figma?type=design&node-id=0-1&mode=design&t=dOiKSmXkkw2qnUFB-0).
 
 ## Languages & tools
 
-- [Node](https://nodejs.org/en/)
+- [Golang](https://go.dev/doc/)
 
-- [Express](https://expressjs.com/)
+- [Go mod](https://go.dev/ref/mod)
 
-- [Mongoose](https://mongoosejs.com/)
+- [Mysql](https://dev.mysql.com/doc/)
 
-- [React](https://reactjs.org/)
-
-- [Webpack](https://webpack.js.org/)
-
-
-### Code Formatter
-
-- Add a `.vscode` directory
-- Create a file `settings.json` inside `.vscode`
-- Install Prettier - Code formatter in VSCode
-- Add the following snippet:  
-
-```json
-
-    {
-      "editor.formatOnSave": true,
-      "prettier.singleQuote": true,
-      "prettier.arrowParens": "avoid",
-      "prettier.jsxSingleQuote": true,
-      "prettier.trailingComma": "none",
-      "javascript.preferences.quoteStyle": "single",
-    }
-
-```
-
+- [Nuxt Js](https://nuxt.com/docs/getting-started/introduction)
