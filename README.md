@@ -1,12 +1,12 @@
-# MERN Ecommerce
+# Web Apps Crowdfounding
 
 ## Description
 
-An ecommerce store built with MERN stack, and utilizes third party API's. This ecommerce store enable three main different flows or implementations:
+web apps that users can use to invest in the products offered. This application has the following scope:
 
-1. Buyers browse the store categories, products and brands
-2. Sellers or Merchants manage their own brand component
-3. Admins manage and control the entire store components 
+1. Investors browse the store categories, products and brands
+2. Investors can make payments using digital payments
+3. Admins manage and control the entire store components
 
 
 * features:
